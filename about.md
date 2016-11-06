@@ -4,4 +4,4 @@ title: About
 permalink: /about/
 ---
 
-This is a humble blog.
+Just another software engineer who loves learning tech skills

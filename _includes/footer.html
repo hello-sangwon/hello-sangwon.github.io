@@ -9,11 +9,28 @@
           </li>
         </ul>
       </div>
-      <div class="footer-col footer-col-3">
-        <p>{{ site.description }}
-        </p>
+    </div>
+    <div class="footer-col-wrapper">
+      <div class="footer-col footer-col-1">
+        <div id="powered-by-amp">
+          Powered by <a target="_blank" href="https://www.ampproject.org/">AMP ⚡</a>
+        </div>
       </div>
     </div>
   </div>
-  {% include analytics.html %}
+  <amp-analytics type="googleanalytics" id="amp-ga">
+  <script type="application/json">
+    {
+      "vars": {
+        "account": "{{ site.google_analytics_token }}"
+      },
+      "triggers": {
+        "trackPageview": {
+          "on": "visible",
+          "request": "pageview"
+        }
+      }
+    }
+  </script>
+  </amp-analytics>
 </footer>
