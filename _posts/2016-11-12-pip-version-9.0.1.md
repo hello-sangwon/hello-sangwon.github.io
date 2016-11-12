@@ -57,7 +57,7 @@ wheel      0.30.0a0
 format = columns
 ```
 
-이제 매번 `--format=columns`옵션을 지정하지 않아도 columns 옵션으로 표시되는 것을 확인할 수 있었다.
+이제 매번 `--format=columns`옵션을 지정하지 않아도 columns 형식으로 표시되는 것을 확인할 수 있었다.
 
 ```shell
 (venv) $ pip list
