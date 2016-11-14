@@ -4,6 +4,7 @@
   <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
   <title>{% if page.title %}{{ page.title | escape }}{% else %}{{ site.title | escape }}{% endif %}</title>
   <meta name="description" content="{{ page.excerpt | default: site.description | strip_html | normalize_whitespace | truncate: 160 | escape }}">
+  {% if page.ogimage %}<meta name="og:image" content="{{page.ogimage}}">{% endif %}
   <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
   <link rel="icon" href="/favicon.ico" type="image/x-icon">
   {% assign custom_url = site.url | append: site.baseurl %}
