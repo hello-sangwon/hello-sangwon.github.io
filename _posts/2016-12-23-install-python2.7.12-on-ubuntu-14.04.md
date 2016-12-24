@@ -63,7 +63,7 @@ _ssl _ssl.c \
 5\. 빌드 및 설치
 
 ```
-$ ./configure --prefix /usr/local/lib/python2.7.12 --enable-ipv6
+$ ./configure --prefix=/usr/local/lib/python2.7.12 --enable-ipv6
 $ make
 $ sudo make install
 ```
