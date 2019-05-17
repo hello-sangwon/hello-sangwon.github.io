@@ -17,12 +17,20 @@ title: Hello, Sangwon!
 description: > # this means to ignore newlines until "baseurl:"
   Just another software engineer
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site
+url: "https://hello-sangwon.github.io" # the base hostname & protocol for your site
 github_username:  hello-sangwon
+disqus:
+  shortname: hello-sangwon
 
 # Build settings
 markdown: kramdown
 theme: minima
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-gist
 
 # google analytics
-google_analytics_token: UA-86218420-1
+google_analytics: UA-86218420-1
+
+github: [metadata]

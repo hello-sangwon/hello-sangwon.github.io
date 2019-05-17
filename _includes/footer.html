@@ -18,11 +18,12 @@
       </div>
     </div>
   </div>
+{% if jekyll.environment == "production" %}
   <amp-analytics type="googleanalytics" id="amp-ga">
   <script type="application/json">
     {
       "vars": {
-        "account": "{{ site.google_analytics_token }}"
+        "account": "{{ site.google_analytics }}"
       },
       "triggers": {
         "trackPageview": {
@@ -33,4 +34,5 @@
     }
   </script>
   </amp-analytics>
+{% endif %}
 </footer>
